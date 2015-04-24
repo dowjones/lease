@@ -1,0 +1,30 @@
+{
+  "name": "lease",
+  "version": "1.0.0",
+  "description": "In-memory time-released lock for async resources",
+  "keywords": [
+    "lease",
+    "lock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/areusjs/lease.git"
+  },
+  "author": "nemtsov@gmail.com",
+  "main": "./lib",
+  "scripts": {
+    "test": "sh -c 'npm run test-cover && istanbul check-coverage --statements 95 --functions 95 --branches 95 --lines 95'",
+    "test-cover": "istanbul cover _mocha -- -r should --recursive",
+    "test-watch": "mocha -r should --recursive -w -R min"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.8",
+    "mocha": "^2.2.1",
+    "proxyquire": "^1.4.0",
+    "should": "^5.2.0",
+    "sinon": "^1.14.1"
+  },
+  "dependencies": {
+    "common-errors": "^0.4.18"
+  }
+}
