@@ -6,7 +6,9 @@ A memory (RAM) time-released lock for asynchronous resources.
 ## Usage
 
 The following will drop all requests that come in while
-the lock has been taken out and not yet released.
+the lock has been taken out and not yet released. Note that
+it is up to the client to choose what to do
+when another resource has acquired the lease.
 
 ```js
 var Lease = require('./'),
@@ -28,9 +30,6 @@ function get(cb) {
   lease('key', criticalSection);
 }
 ```
-
-It is up to the client to choose what to do
-when another resource acquired the lease.
 
 
 ### API
