@@ -1,4 +1,4 @@
-# Lease [![Build Status](https://secure.travis-ci.org/areusjs/lease.png)](http://travis-ci.org/areusjs/lease) [![NPM version](https://badge.fury.io/js/lease.svg)](http://badge.fury.io/js/lease)
+# Lease [![Build Status](https://secure.travis-ci.org/dowjones/lease.png)](http://travis-ci.org/dowjones/lease) [![NPM version](https://badge.fury.io/js/lease.svg)](http://badge.fury.io/js/lease)
 
 A memory (RAM) time-released lock for asynchronous resources.
 
